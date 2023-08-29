@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Latihan Gustria Melati</title>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <nav class="nav">
+                <img src="./assets/logo.png" alt="logo" class="logo">
+            
+                <div class="group-btn">
+                    <a href="./index.html" class="active">Home</a>
+                    <a href="./profile.html">Our Profile</a>
+                    <a href="./project.html">Achievement</a>
+                    <a href="./contact.html">Message Us</a>
+                </div>
+
+                <div class="dropdown">
+                    <div class="menu-btn" onclick="openMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div id="dropdownContent" class="dropdown-content">
+                        <a href="./index.html" class="active">Home</a>
+                        <a href="./profile.html">Our Profile</a>
+                        <a href="./project.html">Achievement</a>
+                        <a href="./contact.html">Message Us</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-title">
+                    <h1>Hi <span id="title-name"></span>, Welcome To Website</h1>
+                    <h3>Ini adalah website latihan pertama</h3>
+                </div>
+                <div class="hero-img"></div>
+            </div>
+        </section>
+        <section id="content">
+            <div class="content-container">
+                <div class="title">
+                    <h1>Our Facilitation</h1>
+                </div>
+                <div class="content-main">
+                    <div class="content">
+                        <img class="content-img" src="https://source.unsplash.com/bwki71ap-y8" alt="Professional Teacher">
+                        <div class="wrapperOurFacilitation">
+                            <p>Professional Teacher</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img class="content-img" src="https://source.unsplash.com/FNCJxgJ92Kk" alt="Sport Field">
+                        <div class="wrapperOurFacilitation">
+                            <p>Sport Field</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img class="content-img" src="https://source.unsplash.com/bzqU01v-G54" alt="Classroom">
+                        <div class="wrapperOurFacilitation">
+                            <p>Classroom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <div class="form-container">
+                <div class="title">
+                    <h1>Message Us</h1>
+                </div>
+                <div class="forms">
+                    <form>
+                      <label for="name">Nama:</label>
+                      <input type="text" id="name" class="input" name="name" placeholder="Your name here">
+                      <span></span>
+                      <span id="warning-name"></span>
+                
+                      <label for="dob">Tanggal Lahir:</label>
+                      <div class="input-with-icon">
+                          <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+                          <span></span>
+                          <span id="warning-dob"></span>
+                          <span class="calendar-icon">&#x1F4C5;</span>
+                      </div>
+                
+                      <label for="gender">jenis Kelamin:</label>
+                      <div id="gender" class="gender-selection">
+                          <input type="radio" id="male" name="gender" value="Laki-laki">
+                          <label for="male">Laki-laki</label>
+                          <input type="radio" id="female" name="gender" value="Perempuan">
+                          <label for="female">Perempuan</label>
+                      </div>
+                      <span></span>
+                      <span id="warning-gender"></span>
+
+                
+                      <label for="msg">Pesan:</label>
+                      <textarea id="msg" name="msg" placeholder="Enter your message here.."></textarea>
+                      <span></span>
+                      <span id="warning-msg"></span>  
+                    
+
+                      <input type="button" value="Submit" onclick="showResult()">
+                    </form>
+                    <div class="result">
+                        <h3><span id="result-today"></span>:<span id="result-time"></span></h3>
+                        <div class="flex-col">
+                            <h3>Nama: <span id="result-name"></span></h3>
+                            <h3>Tanggal Lahir: <span id="result-dob"></span></h3>
+                            <h3>jenis Kelamin: <span id="result-gender"></span></h3>
+                            <h3>Pesan: <span id="result-msg"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>          
+    </main>
+    <footer>
+        <section id="footer">
+            <nav class="nav-footer">
+                <img src="./assets/logo.png" alt="logo" class="logo">
+                <p>&copy; Created By RevoU.</p>
+            </nav>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
